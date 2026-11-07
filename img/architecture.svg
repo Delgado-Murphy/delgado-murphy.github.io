@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1504" height="696" viewBox="-48 -48 1504 696" role="img" aria-label="How the Hasler works">
+<rect x="-48" y="-48" width="1504" height="696" fill="#14110F"/>
+<rect x="0" y="130" width="220" height="96" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="18" y="156" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">IN THE CABINET</text>
+<text x="18" y="180" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Keys 1–6 + PU</text>
+<text x="18" y="202" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">piano keys, as in 1964</text>
+<rect x="0" y="252" width="220" height="96" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="18" y="278" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">IN THE CABINET</text>
+<text x="18" y="302" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Volume + tone</text>
+<text x="18" y="324" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">tone clicks it off</text>
+<rect x="0" y="374" width="220" height="96" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="18" y="400" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">IN THE CABINET</text>
+<text x="18" y="424" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Pilot lamp</text>
+<text x="18" y="446" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">five colours, Morse</text>
+<rect x="270" y="130" width="220" height="340" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="288" y="156" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">OUR BOARD</text>
+<text x="288" y="180" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Hasler HAT</text>
+<text x="288" y="202" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">keys → MCP23017</text>
+<text x="288" y="221" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">knobs → ADS1115</text>
+<text x="288" y="240" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">lamp ← three lines</text>
+<text x="288" y="278" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">USB-C power in,</text>
+<text x="288" y="297" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">20 V to the amp</text>
+<text x="288" y="335" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">every wire protected</text>
+<text x="288" y="354" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">at the plug</text>
+<path d="M220 178 L268 178" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M262 172 L268 178 L262 184" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M220 300 L268 300" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M262 294 L268 300 L262 306" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M222 422 L270 422" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M228 416 L222 422 L228 428" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<rect x="540" y="210" width="250" height="180" rx="8" fill="#1F1A12" stroke="#FFB238" stroke-width="2"/>
+<text x="558" y="236" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">ON THE RASPBERRY PI</text>
+<text x="558" y="260" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">haslerd</text>
+<text x="558" y="282" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">hears the keys and knobs</text>
+<text x="558" y="301" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">starts the music</text>
+<text x="558" y="320" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">drives the lamp</text>
+<text x="558" y="339" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">serves the key page</text>
+<path d="M490 300 L538 300" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M532 294 L538 300 L532 306" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<rect x="540" y="0" width="250" height="96" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="558" y="26" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">YOUR PHONE</text>
+<text x="558" y="50" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">The key page</text>
+<text x="558" y="72" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">http://hasler.local</text>
+<path d="M665 98 L665 208" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M659 110 L665 104 L671 110" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M659 202 L665 208 L671 202" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<rect x="540" y="486" width="250" height="96" rx="8" fill="#171512" stroke="#4A443B" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="558" y="512" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">OPTIONAL</text>
+<text x="558" y="536" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Home Assistant</text>
+<text x="558" y="558" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">hold a key for a scene</text>
+<path d="M665 392 L665 484" fill="none" stroke="#6A645A" stroke-width="1.5" stroke-dasharray="4 4"/>
+<rect x="860" y="110" width="280" height="82" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="878" y="136" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">RADIO</text>
+<text x="878" y="160" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Internet radio</text>
+<text x="878" y="182" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">~600 stations · MPD (moOde)</text>
+<rect x="860" y="210" width="280" height="82" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="878" y="236" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">YOUTUBE MUSIC</text>
+<text x="878" y="260" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">YouTube Music</text>
+<text x="878" y="282" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">yt-dlp finds it, MPD plays</text>
+<rect x="860" y="310" width="280" height="82" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="878" y="336" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">SPOTIFY</text>
+<text x="878" y="360" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Spotify Connect</text>
+<text x="878" y="382" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">go-librespot</text>
+<rect x="860" y="410" width="280" height="82" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="878" y="436" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">YOUR PHONE</text>
+<text x="878" y="460" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">AirPlay · Bluetooth · UPnP</text>
+<text x="878" y="482" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">any app; guests too</text>
+<path d="M790 300 L825 300" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M825 151 L825 451" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M825 151 L858 151" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M852 145 L858 151 L852 157" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M825 251 L858 251" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M852 245 L858 251 L852 257" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M825 351 L858 351" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M852 345 L858 351 L852 357" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M825 451 L858 451" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M852 445 L858 451 L852 457" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<text x="828" y="96" fill="#7D766B" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" text-anchor="start">one at a time</text>
+<path d="M1140 151 L1170 151" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M1140 251 L1170 251" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M1140 351 L1170 351" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M1140 451 L1170 451" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M1170 151 L1170 530" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<rect x="1200" y="110" width="208" height="82" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="1218" y="136" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">TONE</text>
+<text x="1218" y="160" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">CamillaDSP</text>
+<text x="1218" y="182" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">the tone knob's effects</text>
+<path d="M1170 151 L1198 151" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M1192 145 L1198 151 L1192 157" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<rect x="1200" y="230" width="208" height="82" rx="8" fill="#171512" stroke="#2A2622" stroke-width="1"/>
+<text x="1218" y="256" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">AMPLIFIER</text>
+<text x="1218" y="280" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Amp4 Pro</text>
+<text x="1218" y="302" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">volume, with a ceiling</text>
+<path d="M1304 192 L1304 228" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M1298 222 L1304 228 L1310 222" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<rect x="1200" y="350" width="208" height="82" rx="8" fill="#1F1A12" stroke="#FFB238" stroke-width="2"/>
+<text x="1218" y="376" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">SINCE 1964</text>
+<text x="1218" y="400" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">The speaker</text>
+<text x="1218" y="422" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">the original cone</text>
+<path d="M1304 312 L1304 348" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<path d="M1298 342 L1304 348 L1310 342" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+<rect x="1200" y="486" width="208" height="106" rx="8" fill="#171512" stroke="#4A443B" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="1218" y="512" fill="#FFB238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1.5">OTHER ROOMS</text>
+<text x="1218" y="536" fill="#EFE6D2" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">More Haslers</text>
+<text x="1218" y="558" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">in step, via Snapcast</text>
+<text x="1218" y="577" fill="#B9B0A0" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13">each with its own knob</text>
+<path d="M1170 530 L1198 530" fill="none" stroke="#6A645A" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M1192 524 L1198 530 L1192 536" fill="none" stroke="#6A645A" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For makers &amp; developers · Hasler</title>
+<meta name="description" content="Build guide, the Hasler HAT, the code, releases, the Home Assistant integration and licences. All open.">
+<meta name="theme-color" content="#17100B">
+<link rel="canonical" href="https://delgado-murphy.github.io/makers.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hasler, by Delgado &amp; Murphy">
+<meta property="og:title" content="For makers &amp; developers · Hasler">
+<meta property="og:description" content="Build guide, the Hasler HAT, the code, releases, the Home Assistant integration and licences. All open.">
+<meta property="og:url" content="https://delgado-murphy.github.io/makers.html">
+<meta property="og:image" content="https://delgado-murphy.github.io/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A cream radio dial with a red needle and the words: Hasler, a 1964 Swiss radio, playing again.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/Fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="masthead">
+  <div class="wrap">
+    <a class="wordmark" href="./"><span class="pilot" aria-hidden="true"></span>Hasler</a>
+    <nav aria-label="Pages">
+      <ul class="keys">
+        <li><a href="./"><span class="n">1</span><span class="t">Home</span></a></li>
+        <li><a href="story.html"><span class="n">2</span><span class="t">Story</span></a></li>
+        <li><a href="how-it-works.html"><span class="n">3</span><span class="t">How it works</span></a></li>
+        <li><a href="living-with-it.html"><span class="n">4</span><span class="t">Living with it</span></a></li>
+        <li><a href="makers.html" aria-current="page"><span class="n">5</span><span class="t">Makers</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="label">For makers &amp; developers</p>
+      <h1>Have an old radio? Build your own.</h1>
+      <p class="lede">The code, the board and the guides are open. Everything we use to build a Hasler is in one repository, written so that someone else can do it too.</p>
+      <div class="hero-actions" style="margin-top:6px">
+        <a class="btn primary" style="background:var(--amber);color:#1A1208" href="https://github.com/Delgado-Murphy/hasler">The repository</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="build-title">
+    <div class="wrap">
+      <div class="prose">
+        <p class="label">Building one</p>
+        <h2 id="build-title">From an empty cabinet to a working radio</h2>
+        <ul class="links">
+          <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/build-guide.md">Build guide</a><span>Step by step: survey the panel, wire it, install, calibrate, hand it over.</span></li>
+          <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/new-install.md">A new SD card</a><span>The radio’s software from a blank card, headless, from a signed release.</span></li>
+          <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/hardware.md">Hardware</a><span>Parts list, wiring, power and protection.</span></li>
+          <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/sound.md">The knobs’ sound effects</a><span>What the tone knob can do, and how a cabinet’s knobs get it.</span></li>
+          <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/multiroom.md">Multiroom and casting</a><span>Snapcast, room names, AirPlay, UPnP, Bluetooth, Spotify.</span></li>
+          <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/lamp.md">The pilot lamp</a><span>The light language, and the design the code follows.</span></li>
+          <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/remote-help.md">Remote help</a><span>How the makers look at a radio from afar, only when its owner says so.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="hat-title">
+    <div class="wrap">
+      <p class="label">The board</p>
+      <h2 id="hat-title">The Hasler HAT</h2>
+      <div class="grid three">
+        <div class="card"><h3>What it does</h3><p>Sits on the amplifier above a Raspberry Pi, takes 20 V over USB-C, protects it, and joins the cabinet’s keys, knobs and lamp to the Pi through one ribbon cable.</p></div>
+        <div class="card"><h3>How it is made</h3><p>A KiCad project generated from one Python file, so the netlist has a single source. Four layers, ordered and assembled at JLCPCB.</p></div>
+        <div class="card link-card"><h3>Read more</h3>
+          <ul class="links">
+            <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/hat/BRIEF.md">The brief</a></li>
+            <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/hat/DESIGN.md">Design decisions</a></li>
+            <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/hardware/hat/ORDERING.md">Ordering and bring-up</a></li>
+          </ul>
+        </div>
+      </div>
+      <figure class="figure dark export" style="margin-top:22px">
+        <a href="img/hat-1600.webp"><picture><source type="image/webp" srcset="img/hat-800.webp 800w, img/hat-1600.webp 1600w" sizes="(min-width: 1180px) 1110px, calc(100vw - 32px)"><img src="img/hat-1600.png" width="1600" height="899" alt="A render of the Hasler HAT rev A, a dark green circuit board with a wide ribbon connector, a green power terminal and &#x27;Delgado &amp; Murphy, Hasler HAT rev A 2026&#x27; printed on it. Beside it, ten lines on what is on the board: USB-C power, the eFuse, the amplifier terminal, the cabinet&#x27;s ribbon plug, ESD guards, the key and knob readers, the lamp lines, a protected knob supply and spare ports." loading="lazy"></picture></a>
+        <figcaption>The Hasler HAT, our board between the 1964 cabinet and the Raspberry Pi.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="code-title">
+    <div class="wrap">
+      <p class="label">The software</p>
+      <h2 id="code-title">One program, many cabinets.</h2>
+      <div class="grid two">
+        <div>
+          <ul class="links">
+            <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/contributing.md">Contributing</a><span>Code layout, tests, and how a cabinet’s panel is described.</span></li>
+            <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/ota.md">Over-the-air updates</a><span>Signed releases, installing at rest, stepping back by itself.</span></li>
+            <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/release.md">Releasing</a><span>How a version is built, signed, tried on Bench and promoted to Stable.</span></li>
+            <li><a href="https://github.com/Delgado-Murphy/hasler/blob/master/CHANGELOG.md">Changelog</a><span>Every version, in plain words.</span></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="links">
+            <li><a href="https://delgado-murphy.github.io/hasler-releases/">Releases</a><span>What changed in each version, for owners.</span></li>
+            <li><a href="https://github.com/Delgado-Murphy/hasler-homeassistant">Home Assistant integration</a><span>The radio as a device: media player, volume, standby, updates. Installs with HACS.</span></li>
+            <li><a href="https://github.com/Delgado-Murphy/hasler/tree/master/config/variants">Cabinet descriptions</a><span>Each cabinet’s panel as one YAML file: the Hasler HM, the Excelsior.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="lic-title">
+    <div class="wrap">
+      <div class="prose">
+        <p class="label">Licences</p>
+        <h2 id="lic-title">Open, and saying so precisely.</h2>
+        <p>The code is <a href="https://github.com/Delgado-Murphy/hasler/blob/master/LICENSE">MIT</a>. The moOde patch is <a href="https://github.com/Delgado-Murphy/hasler/blob/master/config/moode/LICENSE">GPL-3.0-or-later</a>, because it changes moOde. The HAT’s hardware design is <a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/hat/LICENSE">CERN-OHL-P-2.0</a>. Everything a release bundles is listed in the <a href="https://github.com/Delgado-Murphy/hasler/blob/master/THIRD_PARTY_NOTICES.md">third-party notices</a>.</p>
+        <p>This site uses the Fraunces and JetBrains Mono fonts under the SIL Open Font License 1.1 (<a href="fonts/OFL-1.1-Fraunces.txt">Fraunces</a>, <a href="fonts/OFL-1.1-JetBrains-Mono.txt">JetBrains Mono</a>).</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="living-with-it.html">Living with it</a></li>
+          <li><a href="makers.html">Makers</a></li>
+          <li><a href="https://github.com/Delgado-Murphy/hasler">The code on GitHub</a></li>
+        </ul>
+      </nav>
+      <p>Hasler HM, Bern 1964. Restored 2026. No trackers, no cookies on this site.</p>
+    </div>
+    <p class="mark" aria-label="Delgado and Murphy"><span>Delgado<i>&amp;</i>Murphy</span></p>
+  </div>
+</footer>
+</body>
+</html>

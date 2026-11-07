@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works · Hasler</title>
+<meta name="description" content="Inside the Hasler: a small computer, a modern amplifier and our own board, wired to the original keys, knobs, lamp and speaker. The pilot lamp, rooms, updates and help.">
+<meta name="theme-color" content="#17100B">
+<link rel="canonical" href="https://delgado-murphy.github.io/how-it-works.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hasler, by Delgado &amp; Murphy">
+<meta property="og:title" content="How it works · Hasler">
+<meta property="og:description" content="Inside the Hasler: a small computer, a modern amplifier and our own board, wired to the original keys, knobs, lamp and speaker. The pilot lamp, rooms, updates and help.">
+<meta property="og:url" content="https://delgado-murphy.github.io/how-it-works.html">
+<meta property="og:image" content="https://delgado-murphy.github.io/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A cream radio dial with a red needle and the words: Hasler, a 1964 Swiss radio, playing again.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/Fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="masthead">
+  <div class="wrap">
+    <a class="wordmark" href="./"><span class="pilot" aria-hidden="true"></span>Hasler</a>
+    <nav aria-label="Pages">
+      <ul class="keys">
+        <li><a href="./"><span class="n">1</span><span class="t">Home</span></a></li>
+        <li><a href="story.html"><span class="n">2</span><span class="t">Story</span></a></li>
+        <li><a href="how-it-works.html" aria-current="page"><span class="n">3</span><span class="t">How it works</span></a></li>
+        <li><a href="living-with-it.html"><span class="n">4</span><span class="t">Living with it</span></a></li>
+        <li><a href="makers.html"><span class="n">5</span><span class="t">Makers</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="label">How it works</p>
+      <h1>Old outside. Quietly new inside.</h1>
+      <p class="lede">A small computer, a modern amplifier and a board of our own, wired to the cabinet’s original keys, knobs, lamp and speaker.</p>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="arch-title">
+    <div class="wrap split">
+      <div class="prose">
+        <p class="label">In one picture</p>
+        <h2 id="arch-title">From a key press to the speaker</h2>
+        <p>The <strong>keys and knobs</strong> are wired to our board, the <strong>Hasler HAT</strong>, which sits on a <strong>Raspberry Pi</strong> and an <strong>amplifier</strong>.</p>
+        <p>On the Pi runs <strong>haslerd</strong>, our small program. It feels each key and knob, starts the right music, drives the pilot lamp, and serves the radio’s page to phones on your Wi-Fi.</p>
+        <p>The music itself is played by <a href="https://moodeaudio.org/">moOde audio</a>, a well-loved open-source player. Spotify, AirPlay, Bluetooth and other music apps all arrive through the same amplifier, and the volume knob is the amplifier’s own volume, so nothing is louder than the knob allows. All of it comes out of the cabinet’s original speaker.</p>
+      </div>
+      <figure class="figure dark export">
+        <a href="img/architecture.svg"><img src="img/architecture.svg" alt="Diagram. The cabinet&#x27;s keys, knobs and pilot lamp connect to the Hasler HAT board, which connects to haslerd on the Raspberry Pi. haslerd also serves the key page on your phone, and can talk to Home Assistant if you use it. haslerd starts one source at a time: internet radio, YouTube Music, Spotify Connect, or a phone over AirPlay, Bluetooth or UPnP. The music goes through CamillaDSP (tone), then the Amp4 Pro amplifier (volume, with a ceiling), then the original speaker. Snapcast can send it to other Haslers too." loading="lazy"></a>
+        <figcaption>Keys and knobs in, music and light out.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="lamp" aria-labelledby="lamp-title">
+    <div class="wrap">
+      <p class="label">The pilot lamp</p>
+      <h2 id="lamp-title">A small light with a lot to say.</h2>
+      <p class="lede">Five colours, a few rhythms, one meaning each. If the lamp moves, it isn’t asleep. If it’s dark, it is safe to unplug.</p>
+      <ul class="lamp-list">
+        <li><span class="lw" data-c="gold" data-m="filament" aria-hidden="true"></span><span><b>Playing</b><span class="rhythm">warm and bright, a faint filament shimmer</span><span class="means">Music is on, like a light bulb in the window.</span></span></li>
+        <li><span class="lw" data-c="amber" data-m="ready" aria-hidden="true"></span><span><b>Ready</b><span class="rhythm">amber, dim and still</span><span class="means">Press a key.</span></span></li>
+        <li><span class="lw" data-c="amber" data-m="breath" aria-hidden="true"></span><span><b>Busy</b><span class="rhythm">amber, breathing every 2.8 s</span><span class="means">Starting, loading, updating. Leave it plugged in.</span></span></li>
+        <li><span class="lw" data-c="amber" data-m="kick" aria-hidden="true"></span><span><b>Heard you</b><span class="rhythm">one quick brighten</span><span class="means">Your key press arrived, within a frame.</span></span></li>
+        <li><span class="lw" data-c="blue" data-m="steady" aria-hidden="true"></span><span><b>A phone is playing</b><span class="rhythm">moon blue, steady</span><span class="means">Spotify, AirPlay or Bluetooth has the radio.</span></span></li>
+        <li><span class="lw" data-c="blue" data-m="breath" aria-hidden="true"></span><span><b>Pairing</b><span class="rhythm">blue, breathing</span><span class="means">Bluetooth is open for a new phone.</span></span></li>
+        <li><span class="lw" data-c="ember" data-m="ember" aria-hidden="true"></span><span><b>Asleep</b><span class="rhythm">a deep ember glow that never moves</span><span class="means">Standby. A key or the tone knob wakes it.</span></span></li>
+        <li><span class="lw" data-c="amber" data-m="bloom" aria-hidden="true"></span><span><b>OK</b><span class="rhythm">a green bloom, then back</span><span class="means">Done: a phone paired, the Wi-Fi joined.</span></span></li>
+        <li><span class="lw" data-c="amber" data-m="eye" aria-hidden="true"></span><span><b>That didn’t work</b><span class="rhythm">a slow red glow that fades</span><span class="means">Say, a station is off the air. Try another key.</span></span></li>
+        <li><span class="lw" data-c="amber" data-m="beckon" aria-hidden="true"></span><span><b>Press a key on the radio</b><span class="rhythm">two quick brightens, again and again</span><span class="means">To confirm something you started on the page.</span></span></li>
+        <li><span class="lw" data-c="amber" data-m="alert" aria-hidden="true"></span><span><b>No internet</b><span class="rhythm">two red flashes every few seconds</span><span class="means">Check the router. Bluetooth still works.</span></span></li>
+        <li><span class="lw" data-c="amber" data-m="swell" aria-hidden="true"></span><span><b>Joined a room</b><span class="rhythm">one slow swell</span><span class="means">This radio joined or left another room’s music.</span></span></li>
+        <li><span class="lw" data-c="amber" data-m="cq" aria-hidden="true"></span><span><b>Needs Wi-Fi</b><span class="rhythm">Morse CQ in amber: -·-· --·-</span><span class="means">It has opened its own setup network.</span></span></li>
+        <li><span class="lw" data-c="green" data-m="hi" aria-hidden="true"></span><span><b>It’s me</b><span class="rhythm">Morse HI in green: ···· ··</span><span class="means">Identify, when you have more than one.</span></span></li>
+        <li><span class="lw" data-c="green" data-m="ok" aria-hidden="true"></span><span><b>Set up, or updated</b><span class="rhythm">Morse OK in green: --- -·-</span><span class="means">All went well.</span></span></li>
+        <li><span class="lw" data-c="red" data-m="sos" aria-hidden="true"></span><span><b>Needs the makers</b><span class="rhythm">Morse SOS in red: ··· --- ···</span><span class="means">The page says what. Tell us.</span></span></li>
+        <li><span class="lw" data-c="off" aria-hidden="true"></span><span><b>Dark</b><span class="rhythm">nothing at all</span><span class="means">Off. Safe to unplug. Nothing else is ever dark.</span></span></li>
+      </ul>
+      <p style="margin-top:18px;color:var(--text2)">From sunset to sunrise the lamp is dimmer and slower. The knobs never change it: your ears are the feedback. Can’t tell the colours apart? The radio’s page says it in words, and <em>Show me</em> plays any signal on the real lamp. <a href="https://github.com/Delgado-Murphy/hasler/blob/master/docs/lamp.md">The lamp’s full design</a>.</p>
+      <figure class="figure dark export" style="margin-top:22px">
+        <a href="img/lamp-1600.webp"><picture><source type="image/webp" srcset="img/lamp-800.webp 800w, img/lamp-1600.webp 1600w" sizes="(min-width: 1180px) 1110px, calc(100vw - 32px)"><img src="img/lamp-1600.png" width="1600" height="1256" alt="Five glowing swatches: amber (the radio), ember (asleep), moon blue (a phone is playing), green (OK) and red (something is wrong). Below, four Morse codes drawn as dots and dashes: CQ in amber (needs Wi-Fi), HI in green (it&#x27;s me), OK in green (done), SOS in red (needs the makers). Then five rhythms: steady, breath (busy), kick (heard you), beckon (press a key on the radio) and dark (safe to unplug)." loading="lazy"></picture></a>
+        <figcaption>Five colours, a few rhythms, and Morse when it has something to say.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="rooms-title">
+    <div class="wrap split">
+      <div class="prose">
+        <p class="label">Rooms</p>
+        <h2 id="rooms-title">Two Haslers, one song.</h2>
+        <p>Two or more Haslers on the same Wi-Fi can play the same music, in step. One radio <strong>leads</strong> and the others <strong>follow</strong>; each keeps its own volume, tone and standby.</p>
+        <p>Start a group from the leader’s page with <em>Also play on…</em>, or give a key on the other radio the job of joining. Grouped, music starts about a second after a key press: the time it takes to keep every speaker together.</p>
+        <p>Phones see each radio by its room: <em>Hasler Kitchen</em>, <em>Hasler Study</em>.</p>
+      </div>
+      <div class="card">
+        <p class="label">While a radio follows</p>
+        <ul class="facts">
+          <li>Its numbered keys change the music for the whole group.</li>
+          <li>Volume and tone stay with each radio.</li>
+          <li>Standby on a follower sleeps just that radio; on the leader, it ends the group.</li>
+          <li>A phone playing to the leader is heard everywhere.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="upd-title">
+    <div class="wrap split flip">
+      <div class="prose">
+        <p class="label">Updates and help</p>
+        <h2 id="upd-title">It looks after itself. When it can’t, we’re a message away.</h2>
+        <p><strong>Updates</strong> are signed by us, so the radio can tell they are genuine. Small ones install at night, only while it rests. Bigger ones ask first. Afterwards the radio checks itself, and if anything is worse it goes back to the version it had, by itself. Your keys and settings are never touched.</p>
+        <p>Every new version goes to our own radio first, on the <strong>Bench</strong> channel, and only later to <strong>Stable</strong>, the channel every radio at home is on.</p>
+        <p><strong>When something is wrong</strong>, the page checks the radio and says what it found, in plain words. <em>Tell the makers</em> gathers what we usually ask, with nothing private, and our answer comes back on the radio’s own page. If we need to look, the owner opens a private link for 24 hours with a press on the radio, and it closes by itself.</p>
+      </div>
+      <figure class="figure dark export">
+        <a href="img/updates-support-1600.webp"><picture><source type="image/webp" srcset="img/updates-support-800.webp 800w, img/updates-support-1600.webp 1600w" sizes="(min-width: 1180px) 1110px, calc(100vw - 32px)"><img src="img/updates-support-1600.png" width="1600" height="1163" alt="Two rows of four steps. Updates: built and signed, tried on the makers&#x27; bench radio and then released to everyone, installed at night while your radio rests, then kept, or rolled back if anything fails. Support: &#x27;Something&#x27;s wrong?&#x27; on the key page, &#x27;Send to the makers&#x27;, a private ticket the makers mark seen and then done, and their answer shown on the radio. Below: an optional daily check-in, 24-hour remote help, and a note that the radio keeps playing even if the makers can&#x27;t be reached." loading="lazy"></picture></a>
+        <figcaption>New versions go to our radio first, then to yours.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="living-with-it.html">Living with it</a></li>
+          <li><a href="makers.html">Makers</a></li>
+          <li><a href="https://github.com/Delgado-Murphy/hasler">The code on GitHub</a></li>
+        </ul>
+      </nav>
+      <p>Hasler HM, Bern 1964. Restored 2026. No trackers, no cookies on this site.</p>
+    </div>
+    <p class="mark" aria-label="Delgado and Murphy"><span>Delgado<i>&amp;</i>Murphy</span></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+# Deploys the org site (Delgado-Murphy/delgado-murphy.github.io) to GitHub Pages.
+# Copy to .github/workflows/pages.yml in that repo, with the contents of hasler's
+# site/ at the repo root. Pages source: GitHub Actions.
+#
+# Never add a top-level folder named hasler/, hasler-releases/ or
+# hasler-homeassistant/: those paths are the other repos' project Pages, and
+# radios fetch updates from delgado-murphy.github.io/hasler-releases/.
+name: pages
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Refuse folders that would shadow project Pages
+        run: |
+          for d in hasler hasler-releases hasler-homeassistant; do
+            if [ -e "$d" ]; then echo "::error::'$d/' would shadow delgado-murphy.github.io/$d/"; exit 1; fi
+          done
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
